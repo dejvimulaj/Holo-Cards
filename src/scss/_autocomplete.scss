@@ -1,0 +1,105 @@
+.autocomplete-container {
+    position: relative;
+    width: 380px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6px 15px;
+    border: 2px solid $border-teal;
+    border-radius: 25px;
+    min-width: 40px;
+    position: relative;
+    box-shadow: 0px 2px 4px $border-teal;
+    background-color: $btn-bg;
+  }
+  
+  .input-box input {
+    border: none;
+    outline: none;
+    background-color: $btn-bg;
+    color: $text-color;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    flex-grow: 1;
+  }
+  
+  .input-box.active {
+    border-radius: 25px 25px 0 0;
+    border-bottom: none;
+  }
+  
+  .search-icon {
+    font-size: 20px !important;
+    color: $border-teal;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .search-icon:hover {
+    font-size: 28px !important;
+    margin-right: 6px;
+  }
+  
+  .clear-btn {
+    background: transparent;
+    border: none;
+    color: $border-teal;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .clear-btn:hover {
+    color: $hover-danger;
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 25px 25px;
+    border: 2px solid $border-teal;
+    border-top: none;
+    position: absolute;
+    width: 380px;
+    background: $btn-bg;
+    display: none;
+    overflow-y: auto;
+    max-height: 230px;
+    font-weight: 600;
+    z-index: 999;
+    box-shadow: 0px 2px 4px $border-teal;
+    scrollbar-width: thin;
+    scrollbar-color: $bg-dark $btn-bg;
+  }
+  
+  .options-list li {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: $bg-dark;
+    display: flex;
+    align-items: center;
+  }
+  
+  .options-list li img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .options-list li:hover {
+    background: $border-teal-hover;
+    color: $text-color;
+  }
+  
+  .options-list li.active-option {
+    background: $border-teal-hover;
+    color: $text-color;
+  }

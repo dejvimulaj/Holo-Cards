@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Card Displayer</title>
+  <link rel="stylesheet" href="./src/scss/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="btn-group">
+    <button id="btnAll" class="btn1 active-btn">All Cards</button>
+    <button id="btnPoke" class="btn2">Pokemon</button>
+    <button id="btnYugi" class="btn3">Yu-Gi-Oh!</button>
+  </div>
+
+  <div class="mode-group">
+    <button id="btnAPI" class="mode-btn active-mode">API</button>
+    <button id="btnDrawn" class="mode-btn">Drawn</button>
+  </div>
+
+  <div class="autocomplete-container">
+    <div class="input-box" id="inputBox">
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+      <button id="clearButton" class="clear-btn" style="display: none;" title="Clear selection">X</button>
+    </div>
+    <ul class="options-list" id="suggestions"></ul>
+  </div>
+
+  <div id="cardDisplay" class="card-display"></div>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
